@@ -4,6 +4,7 @@ import ProjectItem from "./ProjectItem";
 import imageUrl from "../resources/images/githubFinder.png";
 import imageUrl2 from "../resources/images/contactKeeper.png";
 import imageUrl3 from "../resources/images/paybackBook.png";
+import ContactForm from "./ContactForm";
 
 const Main = () => {
   const [projects] = useState([
@@ -69,14 +70,15 @@ const Main = () => {
             day to day work and to constantly keep learning. After 5 years in
             this field however, I began to feel as if I had reached a growth
             ceiling unless I obtained a more advanced degree. During this time,
-            I became interested in computer programming through my wife and
-            began to think that this was something I could really enjoy and see
-            myself doing for a career. My first language was Ruby and I enjoy
-            using its most well-known framework, Rails as well! My second
-            language is Javascript which I have also come to enjoy and this led
-            me to React, which I am currently building this site with! I am
-            looking forward to continuing to learn and grow as a full-stack
-            developer and computer-scientist for the rest of my life!
+            which was about a year and a half ago, I became interested in
+            computer programming through my wife and began to think that this
+            was something I could really enjoy and see myself doing for a
+            career. My first language was Ruby and I enjoy using its most
+            well-known framework, Rails as well! My second language is
+            Javascript which I have also come to enjoy and this led me to React,
+            which I am currently building this site with! I am looking forward
+            to continuing to learn and grow as a full-stack developer and
+            computer-scientist for the rest of my life!
           </p>
           <p>Some of my other hobbies include:</p>
           <ul>
@@ -135,6 +137,7 @@ const Main = () => {
           </div>
           <h5>Contact Me</h5>
           <p>Want to get in touch? Send me an email here!</p>
+          <ContactForm />
         </div>
       </div>
     </div>
