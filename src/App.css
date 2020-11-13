@@ -29,7 +29,7 @@ body {
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color: lightskyblue;
 }
 
 #menuToggle input {
@@ -151,11 +151,24 @@ body {
   justify-content: center;
 }
 
-.subsection {
-  height: 600px;
+.subsection-container {
+  height: auto;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.subsection {
+  height: auto;
+  width: 80%;
+  border-radius: 25px;
+  padding: 2%;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .banner-container {
@@ -172,6 +185,101 @@ body {
   color: #f3f4f7;
 }
 
-* {
+.fa-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.subsection {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-list li {
+  list-style-type: none;
+}
+
+.projects-list {
+  padding-left: 0px;
+}
+
+.list-item {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.list-item p {
+  margin-left: 10px;
+}
+
+.project-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
   border: black solid 1px;
+  border-radius: 25px;
+  background-color: #f2f3f7;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.project-image {
+  height: auto;
+  width: 250px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: grey;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-external-link:hover {
+  color: #000;
+  opacity: 1;
+}
+
+.fa-github:hover {
+  color: lightskyblue;
 }
