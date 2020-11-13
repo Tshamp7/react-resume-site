@@ -41,6 +41,11 @@ const ContactForm = () => {
         data-netlify="true"
         onSubmit={handleSubmit}
       >
+        <p className="hidden">
+          <label>
+            don't fill this out if youre a human <input name="bot-field" />
+          </label>
+        </p>
         <input type="hidden" name="form-name" value="contact" />
         <div className="field">
           <input

@@ -76,16 +76,16 @@ const Sidebar = () => {
           <i className="fas fa-phone-alt"></i>
           <LinkItem value="(401) 678-1546" />
         </li>
-        <a href="#!">
+        <a href="#introduction">
           <li>Introduction</li>
         </a>
-        <a href="#!">
+        <a href="#about">
           <li>About</li>
         </a>
-        <a href="#!">
+        <a href="#projects">
           <li>Projects</li>
         </a>
-        <a href="#!">
+        <a href="#contact">
           <li>Contact</li>
         </a>
       </ul>

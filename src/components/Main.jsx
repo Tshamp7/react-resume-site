@@ -51,12 +51,12 @@ const Main = () => {
   return (
     <div className="main-container">
       <div style={topStyle}>
-        <div className="banner-container">
+        <div className="banner-container" id="introduction">
           <div className="banner-contents">Hi!</div>
           <div className="banner-contents">I'm Tom Shamp!</div>
         </div>
       </div>
-      <div className="subsection-container">
+      <div className="subsection-container" id="about">
         <div className="subsection">
           <div className="fa-container">
             <i class="fas fa-question-square fa-2x"></i>
@@ -93,7 +93,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="subsection-container">
+      <div className="subsection-container" id="projects">
         <div className="subsection">
           <div className="fa-container folder">
             <i class="fas fa-folder fa-2x"></i>
@@ -130,7 +130,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="subsection-container">
+      <div className="subsection-container" id="contact">
         <div className="subsection">
           <div className="fa-container">
             <i class="fas fa-envelope-square fa-2x"></i>
