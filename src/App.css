@@ -3,7 +3,7 @@ body {
   padding: 0;
 
   /* make it look decent enough */
-  background: #232323;
+  /* background: #232323;*/
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -388,4 +388,8 @@ input:focus + label {
 .form-button:hover {
   background: black;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
