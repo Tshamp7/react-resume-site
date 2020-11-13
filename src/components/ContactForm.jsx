@@ -13,6 +13,12 @@ const ContactForm = () => {
       .join("&");
   };
 
+  const clearForm = () => {
+    setFullName("");
+    setEmail("");
+    setMessage("");
+  };
+
   const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
@@ -23,6 +29,7 @@ const ContactForm = () => {
       .catch((error) => alert(error));
 
     e.preventDefault();
+    clearForm();
   };
 
   return (
