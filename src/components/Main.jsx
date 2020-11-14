@@ -5,6 +5,7 @@ import imageUrl from "../resources/images/githubFinder.png";
 import imageUrl2 from "../resources/images/contactKeeper.png";
 import imageUrl3 from "../resources/images/paybackBook.png";
 import ContactForm from "./ContactForm";
+import TechSkills from "./TechSkills";
 
 const Main = () => {
   const [projects] = useState([
@@ -90,6 +91,7 @@ const Main = () => {
             <li>Training with weights and calisthenics</li>
             <li>Archery</li>
           </ul>
+          <TechSkills />
         </div>
       </div>
 
