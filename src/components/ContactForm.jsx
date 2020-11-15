@@ -4,6 +4,7 @@ const ContactForm = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [botField, setBotfield] = useState("");
 
   const encode = (data) => {
     return Object.keys(data)
@@ -25,7 +26,7 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => alert("Success!"))
+      .then(() => Navigate("/thank_you/"))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -38,12 +39,16 @@ const ContactForm = () => {
         name="contact"
         method="post"
         netlify-honeypot="bot-field"
-        data-netlify="true"
         onSubmit={handleSubmit}
+        netlify
       >
         <p className="hidden">
           <label>
-            don't fill this out if youre a human <input name="bot-field" />
+            don't fill this out if youre a human{" "}
+            <input
+              name="bot-field"
+              onChange={(e) => setBotfield(e.target.value)}
+            />
           </label>
         </p>
         <input type="hidden" name="form-name" value="contact" />
