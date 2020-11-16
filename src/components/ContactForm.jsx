@@ -26,7 +26,7 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => Navigate("/thank_you/"))
+      .then(() => alert("success!"))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -42,6 +42,7 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         netlify
       >
+        <input type="hidden" name="form-name" value="contact" />
         <p className="hidden">
           <label>
             don't fill this out if youre a human{" "}
