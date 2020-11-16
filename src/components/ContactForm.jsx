@@ -4,7 +4,6 @@ const ContactForm = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [botField, setBotfield] = useState("");
 
   const encode = (data) => {
     return Object.keys(data)
