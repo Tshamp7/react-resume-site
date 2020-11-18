@@ -61,7 +61,7 @@ const ContactForm = () => {
             id="fullname"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
-            placeholder="Darth Vader"
+            placeholder="ex: Darth Vader"
             required
           />
 
@@ -74,7 +74,7 @@ const ContactForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             id="email"
-            placeholder="LukesDad@deathstar.gov"
+            placeholder="ex: LukesDad@deathstar.gov"
             required
           />
           <label htmlFor="email">Email</label>
@@ -86,7 +86,7 @@ const ContactForm = () => {
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Hello! How are you!"
+            placeholder="ex: Hello! How are you!"
             required
           />
           <label htmlFor="message">message</label>

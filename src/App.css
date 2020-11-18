@@ -152,6 +152,8 @@ body {
   align-self: center;
   border-radius: 50%;
   width: 80%;
+  height: auto;
+  overflow: hidden;
 }
 
 .skills-container {
