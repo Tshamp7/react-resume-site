@@ -118,15 +118,13 @@ const Main = () => {
           <ul className="projects-list">
             {projects.map((project) => {
               return (
-                <li>
-                  <ProjectItem
-                    key={project.id}
-                    image={project.image}
-                    title={project.title}
-                    url={project.url}
-                    description={project.description}
-                  />
-                </li>
+                <ProjectItem
+                  key={project.id}
+                  image={project.image}
+                  title={project.title}
+                  url={project.url}
+                  description={project.description}
+                />
               );
             })}
           </ul>

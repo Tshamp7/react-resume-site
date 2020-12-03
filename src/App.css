@@ -150,9 +150,6 @@ body {
   font-size: 16px;
 }
 
-/*
-  * And let's slide it in from the left
-  */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -190,6 +187,7 @@ body {
 .subsection {
   height: auto;
   width: 85%;
+  border: 1px solid black;
   border-radius: 25px;
   padding: 2%;
   display: flex;
@@ -218,26 +216,15 @@ body {
   flex-direction: row;
 }
 
-.subsection {
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-}
-
 .projects-list li {
   list-style-type: none;
 }
 
 .projects-list {
   padding-left: 0px;
-}
-
-.list-item {
-  width: 200px;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 10px;
 }
 
 .list-item p {
@@ -249,8 +236,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: 100%;
   border: black solid 1px;
   border-radius: 25px;
   background-color: #ededed;
