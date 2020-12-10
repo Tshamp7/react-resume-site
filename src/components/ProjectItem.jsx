@@ -14,7 +14,7 @@ class ProjectItem extends React.Component {
   setSpans = () => {
     const height = this.projectItemRef.current.clientHeight;
     console.log(this.projectItemRef.current.clientHeight);
-    const spans = Math.ceil(height / 10 + 1);
+    const spans = Math.ceil(height / 10);
     console.log(spans);
     this.setState({ spans });
   };

@@ -5,6 +5,7 @@ import imageUrl from "../resources/images/githubFinder.png";
 import imageUrl2 from "../resources/images/contactKeeper.png";
 import imageUrl3 from "../resources/images/paybackBook.png";
 import imageUrl4 from "../resources/images/crwn-clothing.png";
+import imageUrl5 from "../resources/images/video-searcher.png";
 import ContactForm from "./ContactForm";
 import TechSkills from "./TechSkills";
 
@@ -24,7 +25,7 @@ const Main = () => {
       title: "Ecommerce site",
       url: "www.paybackbook.com",
       description:
-        "A RoR web app built for a local company which enabled them to transition their fundraising business to a completely online format during the COVID-19 pandemic. This project uses Rails views, a PostgresQL database, custom Stripe checkout, and an admin panel for managing orders. An automated emailer was also implemented to automatically send each days orders to the shipping center each night while marking these orders as fulfilled.",
+        "A RoR web app built for a local company which enabled them to transition their fundraising business to a completely online format during the COVID-19 pandemic. This project uses Rails views, a PostgresQL database, custom Stripe checkout, and an admin panel for managing orders.",
     },
     {
       id: 3,
@@ -41,6 +42,13 @@ const Main = () => {
       url: "https://obscure-escarpment-98076.herokuapp.com/",
       description:
         "This is a contact keeper implemented using MongoDB, Express, React and Node. Deployed on Heroku! Try it out! The login is person@example.com and the password is 'password'. It may take a few seconds for the page to load as Heroku spins down hobby dynos after a while of inactivity.",
+    },
+    {
+      id: 5,
+      image: imageUrl5,
+      title: "Video Searcher",
+      url: "https://videos-searcher.netlify.app/",
+      description: "React app Youtube API video searcher.",
     },
   ]);
 
