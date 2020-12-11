@@ -49,10 +49,6 @@ const Sidebar = () => {
           </div>
         </li>
         <li>
-          <i className="fas fa-phone-alt"></i>
-          <LinkItem value="  (401) 678-1546" />
-        </li>
-        <li>
           <a href="#introduction" onClick={closeMenu}>
             Introduction
           </a>
